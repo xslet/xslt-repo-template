@@ -11,20 +11,13 @@
 
 
  <!-- Dependencies for this project -->
- <target name="setup:deps" depends="setup:deps:base">
-  <antcall target="setup:xslutil"/>
- </target>
-
  <property name="dep.xslutil.version" value="1.0.2"/>
 
- <target name="setup:xslutil">
-  <property name="pkg" value="xslutil-${dep.xslutil.version}"/>
-  <property name="dir" value="${dir.work.xsl}/${pkg}"/>
-  <property name="url" value="https://github.com/xslet/xslutil/archive/${dep.xslutil.version}.zip"/>
-  <property name="zip" location="${dir.work.dl}/${pkg}.zip"/>
-  <property name="unzip" location="${dir}/.."/>
-  <get src="${url}" dest="${zip}"/>
-  <unzip src="${zip}" dest="${unzip}"/>
+ <target name="setup:deps" depends="setup:deps:base">
+  <antcall target="setup:xslet-lib">
+   <param name="package" value="xslutil"/>
+   <param name="version" value="${dep.xslutil.version}"/>
+  </antcall>
  </target>
 
 
