@@ -32,6 +32,16 @@
   </exec>
  </target>
 
+ <target name="setup:xslet-lib">
+  <property name="_pkg" value="${package}-${version}"/>
+  <property name="_dir" value="${dir.work.xsl}/${_pkg}"/>
+  <property name="_url" value="https://github.com/xslet/${package}/archive/${version}.zip"/>
+  <property name="_zip" location="${dir.work.dl}/${_pkg}.zip"/>
+  <property name="_unzip" location="${_dir}/.."/>
+  <get src="${_url}" dest="${_zip}"/>
+  <unzip src="${_zip}" dest="${_unzip}"/>
+ </target>
+
 
  <target name="build"
    description="Execute `clean`, `merge` and `deploy` tasks.">

@@ -127,7 +127,7 @@
      </xsl:merge-action>
     </xsl:merge>
 
-    <xsx:template match="/describe">
+    <xsx:template match="/*">
      <xsx:variable name="_data_url" select="@data-src" />
      <html>
      <head>
