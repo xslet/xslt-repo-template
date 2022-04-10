@@ -234,6 +234,7 @@
       <div class="code computed"><xsx:value-of select="$computed" /></div>
      </div>
     </xsx:template>
+    <xsx:template match="compute/param"/>
    </xsx:stylesheet>
   </xsl:result-document>
  </xsl:template>
