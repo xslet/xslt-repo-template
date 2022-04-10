@@ -9,7 +9,7 @@ A repository template for XSLT application/library in xslet project.
 3. Append `target`s to setup dependency libraries and their `antcall` in `build.xml`.
 4. Append necessary namespace declarations in `res/xsl/*.xsl`.
 5. Modify `app-name` to your project name and edit descriptions in `docs/index.html` for github-pages.
-6. Modify `app-name` to your project name and edit descriptions in `src/xsl/main.xsl` for API document.
+6. Edit descriptions in `src/xsl/main.xsl` for API document.
 7. Remove here, uncomment the following and modify `app-name` to your project in this `README.md`.
 8. Execute the command `ant setup` to download dependency libraries and setup this project.
 9. Execute the command `ant build` to build this project.
