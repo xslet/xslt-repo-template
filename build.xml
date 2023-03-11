@@ -5,7 +5,7 @@
  <!-- These properties are used by merge processes -->
  <property name="product" value="app-name.xsl"/>
  <property name="version" value="0.1"/>
- <property name="copyright" value="Copyright (C) 2022 xslet project"/>
+ <property name="copyright" value="Copyright (C) 2022-2023 xslet project"/>
  <property name="license" value="MIT License"/>
  <property name="prodtype" value="library"/>
 
