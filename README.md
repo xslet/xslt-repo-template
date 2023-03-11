@@ -36,7 +36,7 @@ The document about usage of app-name is [here][usage-url].
 
 ## License
 
-Copyright &copy; 2022 Takayuki Sato
+Copyright &copy; 2022-2023 Takayuki Sato
 
 This program is free software under [MIT][mit-url] License.
 See the file LICENSE in this distribution for more details.
